@@ -1,3 +1,30 @@
+# Help! My code keeps disappearing? What happened to it?
+Magic comments are comments that are used internally by the kbase_sdk in order to do XXXX.
+
+Examples of magic comments include
+```
+#BEGIN_HEADER
+(This is where your import statements go)
+#END_HEADER
+
+#BEGIN_CLASS_HEADER
+(This is where your class variables and functions go that you want imported)
+#END_CLASS_HEADER
+
+#BEGIN_CONSTRUCTOR
+(This is in your init statement for your class goes)
+#END_CONSTRUCTOR
+
+#BEGIN YourFunctionName1
+(This is were the implementation details of your functions go)
+#END YourFunctionName1
+
+#BEGIN YourFunctionName2n
+(This is were the implementation details of your functions go)
+#END YourFunctionName2n
+```
+Any code created outside of the Magic Comments will not be included inside the final .impl implementation file.
+
 # Validation
 ### Q: How does validation work for apps? 
 
