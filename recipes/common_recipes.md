@@ -34,16 +34,13 @@ If you wan't to read more about the available functions, see the spec file and s
     genome_data = dfu.get_objects({'object_refs': [genome_ref]})['data'][0]
     genome_obj = genome_data['data']
     genome_meta = genome_data['info'][10]
-    
-    
-                self.dfu.shock_to_file({'handle_id': handle_id,
-                                    'file_path': tmp_gtf_directory,
-                                    'unpack': 'unpack'})
+
     
 ## Upload a file or directory to shock 
     #Upload a directory and zip it
     directory_file_path = "/kb/module/data/"
     shock_id = self.dfu.file_to_shock({"file_path": directory_file_path, "pack": "zip"})["shock_id"]
+    
     #Upload a file to shock
     file_path = "/kb/module/data/"
     shock_id = self.dfu.file_to_shock({"file_path": file_path})["shock_id"]
@@ -51,25 +48,31 @@ If you wan't to read more about the available functions, see the spec file and s
     
 
 ## Save an object to the workspace and get an object reference
+    self.workspace_name = params.get("workspace_name")
+    workspace_id = self.dfu.ws_name_to_id(self.workspace_name)
+    save_object_params = {
+        'id': workspace_id,
+        'objects': [{
+            'type': 'KBaseRNASeq.RNASeqSampleSet',
+            'data': sample_set_data,
+            'name': sample_set_object_name
+        }]
+    }
 
-    new_obj_info = self.ws.save_objects({
-            "workspace": self.workspace_name,
-            "objects": [{
-                "type": "KBaseSequences.SequenceSet",
-                "data": {"sequence_set_id": sequence_set_id, "description": sequence_set_description,
-                         "sequences": sequences},
-                "name": "seqset_" + str(uuid.uuid4())
-            }]
-        })[0]
+    dfu_oi = dfu.save_objects(save_object_params)[0]
+    object_reference = str(dfu_oi[6]) + '/' + str(dfu_oi[0]) + '/' + str(dfu_oi[4])
 
-        return {"ref": str(new_obj_info[6]) + "/" + str(new_obj_info[0]) + "/" + str(new_obj_info[4]),
-                "description": "Sequence Set for " + output_filename}
-
-
+## Save an object from shock to filepath
+    #TODO
+    self.dfu.shock_to_file({'handle_id': handle_id,
+                        'file_path': tmp_gtf_directory,
+                        'unpack': 'unpack'})
 
 
 # GenomeFileUtils Recipes
+    #TODO
 
 
 # Generate a Report Recipes (requires correct widget settings)
+    #TODO
 
