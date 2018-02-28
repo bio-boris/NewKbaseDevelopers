@@ -11,7 +11,7 @@ If you are reading this guide, it is assumed that you
 The purpose of this guide is to answer frequently asked questions, provide solutions for common tasks, and provide more comprehensive links and examples.
 
 Check out
-* Coding Standards
-* Questions and Answers
-* Recipes
+* [Coding Standards](coding_standards.md)
+* [Questions and Answers](questions_and_answers.md)
+* [Code Example Recipes](recipes/common_recipes.md)
 
