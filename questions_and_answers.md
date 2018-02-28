@@ -1,5 +1,5 @@
-# Help! My code keeps disappearing? What happened to it?
-Magic comments are comments that are used internally by the kbase_sdk in order to do XXXX.
+### Help! My python code in the implementation file keeps disappearing? What happened to it?
+Magic comments are comments that are used internally by the kbase_sdk in order to generate the implementation file when you make changes to the spec file. 
 
 Examples of magic comments include
 ```
@@ -24,6 +24,12 @@ Examples of magic comments include
 #END YourFunctionName2n
 ```
 Any code created outside of the Magic Comments will not be included inside the final .impl implementation file.
+
+### How do I organize the code?
+
+There are two common patterns:
+1) Create multiple functions and do everything inside the implmentation file. An example of this pattern can be found in these apps [1,2,3]()
+2) Create a utils directory, create a runner or utility class, pass in the configuration file and parameter files to it, and do everything in there. An example of this pattern can be found in these apps [1,2,3]()
 
 # Validation
 ### Q: How does validation work for apps? 
