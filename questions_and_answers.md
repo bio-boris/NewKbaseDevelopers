@@ -35,3 +35,10 @@ You can install binaries that will automatically be added to $PATH at /kb/deploy
   
 Please follow the [edit dockerfile](https://github.com/kbase/kb_sdk/blob/master/doc/kb_sdk_local_test_module.md#a-edit-dockerfile)
 section of the kb-sdk guide.
+
+### Q: How do I get inside the docker image? How do I get root access?
+
+You are supposed to be able to be logged in with sudo access when you run the test_local/run_bash.sh script. If that’s not working, try changing the --user parameter to `--user 0`
+
+### Q: Tell me about the .sh scripts in the test_local directory?
+You don't really need anything besides the run_bash.sh script. If you want to run tests, use `kb-sdk test`
