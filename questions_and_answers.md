@@ -1,3 +1,25 @@
+## How do I start my app? What do I do now?
+
+1) Work on the implmentaiton file to generate methods
+
+It is recommended to have a spec file look the following:
+    (SpecFile Recipes Link)
+    
+2) Decide on a basic UI layout working backwards with the .spec file
+
+Run Make and Generate the implementation file
+
+
+
+
+### How do I organize the code?
+
+There are two common patterns:
+1) Create multiple functions and do everything inside the implmentation file. An example of this pattern can be found in these apps [1,2,3]()
+2) Create a utils directory, create a runner or utility class, pass in the configuration file and parameter files to it, and do everything in there. An example of this pattern can be found in these apps [1,2,3]()
+
+
+
 ### Help! My python code in the implementation file keeps disappearing? What happened to it?
 Magic comments are comments that are used internally by the kbase_sdk in order to generate the implementation file when you make changes to the spec file. 
 
@@ -18,18 +40,8 @@ Examples of magic comments include
 #BEGIN YourFunctionName1
 (This is were the implementation details of your functions go)
 #END YourFunctionName1
-
-#BEGIN YourFunctionName2n
-(This is were the implementation details of your functions go)
-#END YourFunctionName2n
 ```
 Any code created outside of the Magic Comments will not be included inside the final .impl implementation file.
-
-### How do I organize the code?
-
-There are two common patterns:
-1) Create multiple functions and do everything inside the implmentation file. An example of this pattern can be found in these apps [1,2,3]()
-2) Create a utils directory, create a runner or utility class, pass in the configuration file and parameter files to it, and do everything in there. An example of this pattern can be found in these apps [1,2,3]()
 
 # Validation
 ### Q: How does validation work for apps? 
