@@ -1,19 +1,17 @@
 # Kbase_Developer_FAQ
 Kbase_Developer_FAQ
 
-So you want to be a kbase developer?
-Great! We need you.
+So you want to be a kbase developer? Great! We need more people like you.
 
-First things first, you need to understand 
+If you are reading this guide, it is assumed that you 
 
-What Kbase Is, and to run some apps in it
+* Know what KBase is, and have succesfully ran some apps in the narrative ui
+* Have read through the [KBase SDK Guide](https://github.com/kbase/kb_sdk/) and went through the example app tutorial
 
-Then you need to Learn what the SDK IS, and what its for
+The purpose of this guide is to answer frequently asked questions, provide solutions for common tasks, and provide more comprehensive links and examples.
 
-Then you can check out the example app tutorial
+Check out
+* Coding Standards
+* Questions and Answers
+* Recipes
 
-Now You Are Ready
-
-Also Read PEP8 https://www.python.org/dev/peps/pep-0008/#programming-recommendations
-
-Read this FAQ
