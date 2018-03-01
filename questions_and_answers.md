@@ -117,4 +117,5 @@ You don't really need anything besides the run_bash.sh script. If you want to ru
 
 Help, my report isn't generating output correctly! (Make sure you are using the correct widget, the workspace name is wsName and the output being returned is an array of the dictionary)
 
-JSONRPC Error 
+`ServerError: JSONRPCError: -32601. Unknown server error (output data wasn't produced)`
+This case happens because the python process exits without writing an output file, and then the call back server throws the error above
