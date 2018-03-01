@@ -58,7 +58,7 @@ but this is not currently an out of the box feature.
 ### Q: How do I learn more about the spec.json file?
 While there isn't a document with all of the valid UI Parameters, 
 you can check out this notebook with a variety of different options at
-[User Inferface Parameter Gallery](https://narrative.kbase.us/narrative/ws.23109.obj.1)
+[User Inferface Parameter Gallery](https://narrative.kbase.us/narrative/ws.23109.obj.1). Also see [Narrative UI Specification](https://github.com/kbase/kb_sdk/blob/master/doc/NarrativeUIAppSpecification.pdf)
 
 # Docker
 
