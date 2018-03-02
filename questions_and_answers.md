@@ -119,3 +119,8 @@ Help, my report isn't generating output correctly! (Make sure you are using the 
 
 `ServerError: JSONRPCError: -32601. Unknown server error (output data wasn't produced)`
 This case happens because the python process exits without writing an output file, and then the call back server throws the error above
+
+Error while testing module: Login failed! Server responded with code 401 Unauthorized
+Your token has expired. Get another one by opening your notebook and running
+    import os
+    os.environ
