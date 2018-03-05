@@ -71,6 +71,7 @@ If you wan't to read more about the available functions, see the spec file and s
 
 # GenomeFileUtils Recipes
     #TODO
+    Set up an assembly for all of your tests, otherwise a genome object wont work because it has an assembly ref that may not exist on the appdev/ci workspaces. 
 
 
 # Generate a Report Recipes (requires correct widget settings)
