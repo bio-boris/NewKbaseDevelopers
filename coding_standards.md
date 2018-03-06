@@ -8,8 +8,11 @@ such as a line length of 100 characters. We don't have a linter. But you can use
 ### Q: What python best practices do you recommend?
 
 [Python Best Practices](https://gist.github.com/sloria/7001839)
+
 [An opionated guide to python](http://docs.python-guide.org/en/latest/writing/structure/#object-oriented-programming)
+
 [Raymond Hettinger Videos](http://pyvideo.org/speaker/raymond-hettinger.html)
+
 [Python Gotchas](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make)
 
 ### Q: Which python should I use?
