@@ -113,6 +113,9 @@ You are supposed to be able to be logged in with sudo access when you run the te
 ### Q: Tell me about the .sh scripts in the test_local directory?
 You don't really need anything besides the run_bash.sh script. If you want to run tests, use `kb-sdk test`
 
+### Q: How do I have multiple docker images for different versions of my app or dynamic service?
+You will need to `docker build ` them and tag them with different names if this is not automatically done by your app.
+
 # Common Errors
 
 Help, my report isn't generating output correctly! (Make sure you are using the correct widget, the workspace name is wsName and the output being returned is an array of the dictionary)
