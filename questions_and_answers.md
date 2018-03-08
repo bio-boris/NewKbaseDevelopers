@@ -35,9 +35,14 @@ The most commonly used input from the UI that might be hard to emulate at first 
 There are two common patterns:
 1) Create multiple functions and do everything inside the implmentation file. An example of this pattern can be found in these apps [1,2,3]()
 2) Create a utils directory, create a runner or utility class, pass in the configuration file and parameter files to it, and do everything in there. An example of this pattern can be found in these apps [1,2,3]()
+3) Put data into the data directory. If the data is too large to host on github, check out the following guide for [how to add reference data](https://github.com/kbase/kb_sdk/blob/master/doc/kb_sdk_refdata.md)
+
 
 ### 3) Continue developing the app by working on unit tests
 The following modules show some good examples of tests in which objects are either taken from an existing reference, or uploaded from a local file into the workspace and then retreiving the object reference for it. [1,2,3]()
+Put test related data into the data folder inside the test directory. 
+
+
 
 ### 4) Make the UI
 * hook up the UI to the Spec File to the parameters you are expecting inside your app
