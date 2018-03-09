@@ -20,9 +20,11 @@ Check out
 * [Code Example Recipes](recipes/common_recipes.md)
 
 #### Check out a good example app that shows
+
 * How to organize code neatly
 * How to use docstrings
 * How to use datafileutils
 * How to use kbasereports to generate a report
 
-* [kb_maxbin](https://github.com/kbaseapps/kb_maxbin/tree/master/lib/kb_maxbin)
+[kb_maxbin](https://github.com/kbaseapps/kb_maxbin/tree/master/lib/kb_maxbin)
+
