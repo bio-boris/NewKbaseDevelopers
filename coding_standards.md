@@ -3,7 +3,7 @@
 ### Q: Does the KBase project using any type of coding standards? Do you use a linter?
 
 We aim to follow [pep8](https://www.python.org/dev/peps/pep-0008/#programming-recommendations), but we have some exceptions,
-such as a line length of 100 characters. We don't have a linter. But you can use Flake80 on your code. 
+such as a line length of 100 characters. We don't have a linter. But you can use Flake80 on your code. We have a .tox file to enforce code standards at the [recommended editors section](https://github.com/kbase/project_guides/blob/master/RecommendedEditors.md)
 
 ### Q: What python best practices do you recommend?
 
