@@ -1,9 +1,7 @@
-# Workspace Recipes
-
-## About the workspace
-* While you can get objects form the workspace, it is not the preferred way to do it. We suggest using DataFileUtils instead.
-However, if you don't want to retrieve the entire object, and just want information about it, use ws.get_object_info .
-If you wan't to read more about the available functions, see the spec file and search through the repository at 
+# About the workspace
+* While you can get objects form the workspace, it is not the preferred way to do it. We suggest using [DataFileUtils](https://github.com/bio-boris/NewKbaseDevelopers/blob/master/recipes/FileUtilsRecipes.md#datafileutil) instead.
+However, if you don't want to retrieve the entire object, and just want information about it, the most efficient way is to use the `ws.get_object_info` function.
+If you want to read more about the available functions, see the spec file and search through the repository at 
 [Workspace Deluxe](https://github.com/kbase/workspace_deluxe)
 
 ## Initialize Workspace Client and get an object's information by reference
