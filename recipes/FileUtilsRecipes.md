@@ -13,7 +13,7 @@ DFU and GFU are very commonly used, so check out examples below:
 * [DataFileUtils](https://github.com/kbaseapps/DataFileUtil) is the preferred way to retrieve and save objects, as well as uploading files and receiving an unique identifier once they are in our system.
 
 ## Initialize DataFileUtil Client and get an object by reference.
-    self.callback_url = config["SDK_CALLBACK_URL"]
+    self.callback_url = os.environ['SDK_CALLBACK_URL']
     self.dfu = DataFileUtil(self.callback_url)
     genome_ref = "your/object_reference"
     genome_data = dfu.get_objects({'object_refs': [genome_ref]})['data'][0]
