@@ -1,8 +1,3 @@
-# Common Recipes
-Sometimes you don't want to look at the spec file or go to the kb_apps repo to figure out how to do something,
-you just want an answer quickly.
-
-
 # Workspace Recipes
 
 ## About the workspace
@@ -24,10 +19,3 @@ If you wan't to read more about the available functions, see the spec file and s
     ws = biokbase.narrative.clients.get('workspace')
     obj = ws.get_objects2({'objects' : [{'ref' : '30170/2/1'}]})
 See the [example narrative](https://narrative.kbase.us/narrative/ws.30170.obj.1)
-    
-
-# Generate a Report Recipes (requires correct widget settings)
-    #TODO
-    #OUTPUT WIDGET TYPES
-    #INPUT WIDGET TYPES
-
