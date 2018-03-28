@@ -16,4 +16,4 @@ If you want to read more about the available functions, see the spec file and se
 ## How to use the Workspace Client in the narrative
     ws = biokbase.narrative.clients.get('workspace')
     obj = ws.get_objects2({'objects' : [{'ref' : '30170/2/1'}]})
-See the [example narrative](https://narrative.kbase.us/narrative/ws.30170.obj.1)
+See this [example narrative](https://narrative.kbase.us/narrative/ws.30170.obj.1)
