@@ -3,7 +3,7 @@
 ## Where are they?
 * Search for "Util" at https://ci.kbase.us/#catalog/modules
 
-# DataFileUtil and GenomeFileUtil recipes
+## DataFileUtil and GenomeFileUtil recipes
 
 DFU and GFU are very commonly used, so check out examples below:
 
