@@ -1,13 +1,13 @@
-# FileUtil Recipes
-## Need to work with a type of file? Use a built in utility for that. 
+# Need to work with a type of file? There's a built in utility for that. 
 
-### How?
-*Search for "Util" at https://ci.kbase.us/#catalog/modules
+## Where are they?
+* Search for "Util" at https://ci.kbase.us/#catalog/modules
 
 # DataFileUtil and GenomeFileUtil recipes
 
-DFU and GFU are very commonly used, so check out examples below
+DFU and GFU are very commonly used, so check out examples below:
 
+# DataFileUtil
 
 ## About DataFileUtil
 * [DataFileUtils](https://github.com/kbaseapps/DataFileUtil) is the preferred way to retrieve and save objects, as well as uploading files and receiving an unique identifier once they are in our system.
@@ -52,8 +52,7 @@ DFU and GFU are very commonly used, so check out examples below
                         'file_path': tmp_gtf_directory,
                         'unpack': 'unpack'})
                         
-# GenomeFileUtils Recipes
+# GenomeFileUtils
     #TODO
     Set up an assembly for all of your tests, otherwise a genome object wont work because it has an assembly ref that may not exist on the appdev/ci workspaces. 
 
-# 
