@@ -1,8 +1,10 @@
 # Need to work with a type of file? There's a built in utility for that. 
+* Remember that utils run in seperate containers that have a link to scratch, so keep your files in scratch and them upload them from there. 
 
 ## Where are they?
 * Search for "Util" at https://ci.kbase.us/#catalog/modules
 * DFU and GFU are very commonly used, so check out examples below:
+
 
 # DataFileUtil
 
