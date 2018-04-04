@@ -17,3 +17,17 @@ If you want to read more about the available functions, see the spec file and se
     ws = biokbase.narrative.clients.get('workspace')
     obj = ws.get_objects2({'objects' : [{'ref' : '30170/2/1'}]})
 See this [example narrative](https://narrative.kbase.us/narrative/ws.30170.obj.1)
+
+
+## How to add types to the workspace
+* See the guide at https://ci.kbase.us/services/ws/docs/administrationinterface.html#managing-module-ownership-requests
+* Use the administration interface in any of the clients above to register, approve registration of, and to upload typespecs
+
+## How to get a given typespec / .spec file?
+* If you can't find a typespec in a repo, you can find it doing the following:
+#### Example Spec File Snippet
+
+    from biokbase.workspace.client import Workspace
+    ws = Workspace('https://ci.kbase.us/services/ws')
+    print ws.get_module_info({'mod': 'YourModuleName'})['spec']
+
