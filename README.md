@@ -17,7 +17,7 @@ The purpose of this guide is to answer frequently asked questions, provide solut
 Check out
 * [Coding Standards](coding_standards.md)
 * [Questions and Answers](questions_and_answers.md)
-* [Code Example Recipes](recipes/common_recipes.md)
+* [Code Example Recipes](recipes)
 
 #### Check out a good example app that shows
 
