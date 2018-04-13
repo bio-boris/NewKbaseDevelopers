@@ -28,3 +28,15 @@ Check out
 
 [kb_maxbin](https://github.com/kbaseapps/kb_maxbin/tree/master/lib/kb_maxbin)
 
+#### HOWTO guides
+
+* How to store ephemeral files with scratch
+* How to generate an HTML report with file attachments
+* How to attach extra output files to a report
+* How to use HTML templating in your report
+* How to speed up your SDK tests
+* How to upload and download genome data
+* How to run processes in parallel
+* How to use a 3rd-party program in your app
+* How to use pip packages in your app
+* How to preview HTML report output

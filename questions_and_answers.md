@@ -90,6 +90,34 @@ While there isn't a document with all of the valid UI Parameters,
 you can check out this notebook with a variety of different options at
 [User Inferface Parameter Gallery](https://narrative.kbase.us/narrative/ws.23109.obj.1). Also see [Narrative UI Specification](https://github.com/kbase/kb_sdk/blob/master/doc/NarrativeUIAppSpecification.pdf)
 
+### Q: What are all the auto-generated source files in my app?
+
+These files are created by the KBase type compiler, which takes your KIDL type file (`MyModule.spec`) and generates different modules that are inserted into your codebase. These files are used by docker and service handlers to run your app and its dependencies.
+
+In python apps, the `authclient.py` and `baseclient.py` files get placed into the package directory for your own app, as well as all other the package directories. These files are generally the same across all the packages in your app. `authclient.py` handles authenticating the user so they can access the workspace, while `baseclient.py` has functionality for running SDK apps and calling their methods.
+
+Other auto-generated files in python apps include the `*Client.py` and `*Server.py` files in each package. Each app has an `AppNameClient.py` module in its package. These modules contain classes that can receive parameters for the app and pass that data to the app's server
+
+The `MyModuleServer.py` file gets auto-generated and saved only for your own app's package directory. It handles requests from the python client code
+
+### Q: What makes the tests slow to run?
+
+Every time we run `kb-sdk test` it rebuilds the docker container and re-downloads data objects from your workspace.
+
+Ways you can speed up your tests:
+
+* Make sure all your custom docker setup, such as compiling binaries, is at the top of your Dockerfile so it always gets cached
+* Reduce the amount of files you download and upload 
+* Reuse existing example files on the workspace so you don't have to upload files
+* Separate out your modules into functions that just take local data and files, and test those separately
+* Create a separate unit tests that you can run directly, bypassing `kb-sdk test`
+
+### Q: When you install and run SDK Apps from within your own app, how are these running?
+
+SDK app dependencies that you use in your own app, such as `DataFileUtil`, run in their own docker containers using their own separate servers
+
+TODO someone with more knowledge of how this works should flesh this out (-jay)
+
 # Docker
 
 ### Q: Should I always specify a specific version of a library or executable ?
